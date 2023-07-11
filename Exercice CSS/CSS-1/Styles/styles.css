@@ -1,0 +1,84 @@
+body {
+  background-color: #c6c0a0;
+  font-family: Georgia;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+h2 {
+  color: #7d775c;
+  font-size: 2.5em;
+  font-family: oblique;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #7d775c;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+li {
+  line-height: 24px;
+    
+  
+}
+
+.ma-classe {
+  color: green;
+}
+
+#duree {
+  color: red;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#page {
+  border-radius: 0%;
+  background-color: white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 8px 8px 12px #aaa;
+  -moz-box-shadow: 8px 8px 12px #aaa;
+  -webkit-box-shadow: 8px 8px 12px #aaa;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+  font: bold 1em "georgia", verdana;
+  list-style-type: none;
+  position: absolute;
+  left: 20px;
+ 
+  
+}
+
+#menu a {
+  color: #508768;
+  text-decoration: none;
+  display: block;
+  margin: 2.5%;
+  color: #508768;
+  text-decoration: none;
+  line-height: 2em;
+  width: 150px;
+  border: 1px solid blue;
+  background-color: #bdd7b5;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px ;
+  
+}
+
+#menu a:hover,
+#menu a:focus {
+    color: #BDD7B5; 
+    background-color: #508768; }
