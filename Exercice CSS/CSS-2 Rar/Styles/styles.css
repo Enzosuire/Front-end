@@ -1,11 +1,12 @@
 
 
 thead > tr > th:first-child {
-	background-color:red;
+	background-color: white;
 } 
 
 tbody > tr:nth-child(2n+1) > td:first-child {
-	background-color:green;
+	background-color:#7E3661;
+    color: white;
 }
 
 caption {
@@ -16,6 +17,39 @@ caption {
 
 td, th {
 
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
+
+#ma-classe-2 {
+
+    font-size: 2em;
+    color: blue;
+}
+
+
+tbody> tr:nth-child(2n+1) {
+
+background-color:#FCB941 ;
+}
+
+tbody> tr:nth-child(2n) {
+
+    background-color: #F1654C;
+}
+
+tbody > tr:nth-child(2n) > td:first-child {
+	background-color:#888888;
+    color: white;
+}
+
+tbody > tr:nth-child(2n+1) > td:last-child  {
+    background-color:#8870FF ;
+    color: white;
+}
+
+thead th:last-child {
+
+    background-color: white;
+}
+
