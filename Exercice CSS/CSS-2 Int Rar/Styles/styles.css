@@ -52,23 +52,35 @@ li {
 
 
 div h4 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 
 
 div img {
-    display: block;
-    margin-right: auto;
-    height: 150%;
-    width: 300px;
-    
+  display: block;
+  margin-right: auto;
+  height: 150%;
+  width: 300px;
+
+
 }
 
 .roman {
-    border-bottom: 5px;
+  border-bottom: 5px;
 }
 
-article {
+.conteneur {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+.four {
+  display: flex;
+  flex-flow: row wrap;
 }
