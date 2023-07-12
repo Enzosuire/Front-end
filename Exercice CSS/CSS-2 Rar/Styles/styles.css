@@ -15,9 +15,12 @@ caption {
 
 }
 
+table{
+    border: none;
+}
 td, th {
 
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -48,8 +51,9 @@ tbody > tr:nth-child(2n+1) > td:last-child  {
     color: white;
 }
 
-thead th:last-child {
+thead th:last-child[rowspan]{
 
-    background-color: white;
+    border-right: none;
+    border-top: none;
 }
 
