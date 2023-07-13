@@ -1,0 +1,105 @@
+header {
+  background-color: #f8e7a2;
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+body {
+  background-image: url(../img/fond.png);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  padding: 0;
+  width: 80%;
+}
+
+a {
+  color: orange;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 130%;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  padding: 0;
+  width: 50%;
+  margin: auto;
+}
+
+.Lire {
+  width: 70px;
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  margin-left: 91%;
+  font-size: 1em;
+  margin-bottom: 20px;
+  
+}
+
+.Lunettes {
+  width: 35px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+.img-a {
+  height: 200px;
+  width: 350px;
+  float: left;
+  margin: 0 20px 5px 0;
+}
+
+article {
+  line-height: 1.4;
+
+  font-size: 1em;
+}
+
+h2 {
+  color: orange;
+}
+
+
+@media screen and (max-width: 576px) { 
+    header
+
+
+    {
+        display: flex: ;
+        flex-direction: column;
+
+
+    }
+
+}
+@media screen and (max-width: 576px)
+{
+    nav
+
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+s
