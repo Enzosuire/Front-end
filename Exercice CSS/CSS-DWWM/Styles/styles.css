@@ -1,0 +1,39 @@
+body {
+
+    background: url("../media/A3-1920.jpg");
+  
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  padding: 0;
+  background-color: #44a33d;
+ 
+  
+}
+
+li {
+  width: fit-content;
+  margin-right: 2px;
+  background-color: #87bb34;
+  padding: 20px;
+  border-right:  2px solid white;
+ 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:last-child {
+    border-right: 2px solid #44a33d;
+}
+
+img {
+    float: left;
+}
+
