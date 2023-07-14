@@ -44,6 +44,7 @@ a {
 }
 
 .Lire {
+  display: flex;
   width: 70px;
   background-color: orange;
   color: white;
@@ -51,7 +52,7 @@ a {
   margin-left: 91%;
   font-size: 1em;
   margin-bottom: 20px;
-  
+
 }
 
 .Lunettes {
@@ -81,25 +82,23 @@ h2 {
 }
 
 
-@media screen and (max-width: 576px) { 
-    header
+@media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    flex-direction: column;
 
+  }
 
-    {
-        display: flex: ;
-        flex-direction: column;
-
-
-    }
+  .Lire {
+    margin-left: auto;
+  }
 
 }
-@media screen and (max-width: 576px)
-{
-    nav
 
-    {
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (max-width: 450px) {
+
+  .img-a {
+    display: none;
+  }
+
 }
-s
