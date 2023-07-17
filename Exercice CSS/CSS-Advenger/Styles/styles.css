@@ -18,6 +18,7 @@ main {
   background-color: white;
   margin-left: 15%;
   margin-right: 15%;
+  padding: 25px;
 }
 
 nav {
@@ -52,7 +53,6 @@ a {
   margin-left: 91%;
   font-size: 1em;
   margin-bottom: 20px;
-
 }
 
 .Lunettes {
@@ -65,7 +65,6 @@ footer {
 }
 
 .img-a {
-  height: 200px;
   width: 350px;
   float: left;
   margin: 0 20px 5px 0;
@@ -81,24 +80,40 @@ h2 {
   color: orange;
 }
 
-
 @media screen and (max-width: 576px) {
   header {
     display: flex;
     flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
 
+  nav a {
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  main {
+    padding: 25px;
   }
 
   .Lire {
     margin-left: auto;
   }
 
+  .img-a {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 450px) {
-
+@media screen and (max-width: 200px) {
   .img-a {
     display: none;
   }
-
 }
