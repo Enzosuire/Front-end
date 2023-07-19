@@ -5,6 +5,10 @@ body {
 header {
   text-align: center;
 }
+header nav {
+  background-color: #5e3c30;
+  padding: 20px;
+}
 
 .container {
   margin-left: auto;
@@ -13,9 +17,7 @@ header {
 }
 
 nav {
-  background-color: #5e3c30;
   font-size: 1.4em;
-  padding: 20px;
 }
 
 nav a {
@@ -42,9 +44,6 @@ h3 {
   border-radius: 10px;
 }
 
-a:hover {
-  background-color: rgb(216, 211, 211);
-}
 
 main {
   display: flex;
@@ -68,42 +67,62 @@ section {
   margin-top: 0%;
   padding-top: 15px;
 }
+a:hover {
+  background-color:#a79189 ;
+  transition:ease-in-out 5s ;
+}
+
 
 /*écran pour tablette*/
 
-@media screen and (max-width:960px) {
-
+@media screen and (max-width: 960px) {
   .container {
-    display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-
-
+    width: 100%;
   }
 
   aside {
     flex-basis: 100%;
     margin-top: -10%;
-
-
   }
 
   header {
     justify-content: center;
-
-
+    width: 100%;
   }
 
   nav a {
-    padding: 20px;
-
+    font-size: 1.2em;
+    padding: 60px;
   }
 
+  #chocolat {
+    width: 70%;
+  }
+  nav a {
+    padding: 20px;
+  }
+}
 
+/*écran pour téléphone*/
 
+@media screen and (max-width: 560px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+  }
 
+  aside {
+    display: none;
+  }
 
-
+  #chocolat {
+    width: 100%;
+  }
+  nav a {
+    padding: 30px;
+  }
 }
