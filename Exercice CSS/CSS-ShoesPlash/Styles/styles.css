@@ -1,0 +1,85 @@
+header {
+  background-color: #f6d4f5;
+}
+
+p {
+  font-family: "Courgette", cursive;
+}
+
+
+/*Placement des boutons menu*/
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40%;
+  margin-left: 10%;
+ padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 20%;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav a:hover {
+    background-color: #e48de1;
+    transition: ease-in 0.2s;
+    
+
+}
+
+/*Bar du haut*/
+.topbar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+/*Bouton mon panier*/
+
+.right {
+  
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 25px;
+  width: fit-content;
+  
+
+}
+
+.right i {
+  position: relative;
+  left: 5%;
+  color: #e48de1;
+  font-size: 25px;
+ 
+}
+
+#cart {
+  position: absolute;
+  left: 85%;
+  bottom: 88%;
+  text-align: center;
+ 
+ 
+}
+
+
+/*Taille image*/
+img {
+    max-width: 75%;
+    margin-left: 10%;
+}
+
+.container{
+margin-left: auto;
+margin-right: auto;
+ width: 80%;
+}
