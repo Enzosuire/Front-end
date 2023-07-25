@@ -87,12 +87,13 @@ body {
 
 #slider h2 {
   position: absolute;
-  background-color: #f6d4f5;
+  background-color: #F6D4F5;
   opacity: 0.8;
   padding: 10px;
   margin-top: 0px;
 }
 
+/*images escarpin */
 #select {
   display: flex;
   flex-wrap: wrap;
@@ -100,16 +101,26 @@ body {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
- 
+
+}
+
+#select:hover {
+  transition: ease-in-out 0.2s;
+  opacity: 0.5;
+}
+
+.escarpin:focus {
+  transition: ease-in-out;
+  opacity: 1;
 }
 
 #select h1 {
   width: 100%;
   margin-left: 10px;
- 
+
 }
 
-
+/*3 éléments*/
 
 #news {
   display: flex;
@@ -121,17 +132,41 @@ body {
 #new {
   background-color: white;
   padding: 20px;
+  text-align: center;
 }
 
 #best {
   background-color: white;
   padding: 20px;
+  text-align: center;
 }
 
 #crush {
   background-color: white;
   padding: 20px;
+  text-align: center;
 }
+
+/* couleur des titres 3 éléments*/
+#new h2 {
+  background-color: #e48de1;
+  padding: 10px;
+}
+
+#best h2 {
+  background-color: rgb(64, 179, 64);
+  padding: 10px;
+}
+
+#crush h2 {
+  background-color: rgb(77, 161, 209);
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Courgette", cursive;
+}
+
 
 
 /*footer*/
@@ -150,7 +185,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  
+
 }
 
 #info article {
@@ -159,3 +194,16 @@ footer {
   align-items: center;
 }
 
+
+
+/* Responsive pour téléphone*/
+
+
+@media screen and (max-width: 640px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
