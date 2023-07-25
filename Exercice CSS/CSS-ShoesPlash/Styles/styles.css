@@ -75,7 +75,6 @@ main {
 
 body {
   background-color: rgb(240, 233, 233);
-
 }
 
 /*image de présentations + phrases*/
@@ -84,7 +83,6 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-
 }
 
 #slider h2 {
@@ -97,28 +95,32 @@ body {
 
 #select {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
 
+#select h1 {
+  width: 100%;
+  margin-left: 10px;
+ 
 }
 
 
-.escarpin {
-  width: 100px;
-  height: 100px;
-}
 
 #news {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 20px;
-
 }
 
 #new {
   background-color: white;
   padding: 20px;
-
 }
 
 #best {
@@ -131,13 +133,29 @@ body {
   padding: 20px;
 }
 
+
+/*footer*/
+
 footer {
   background-color: #e48de1;
-  display: flex;
-  flex-direction: row;
-
 }
 
 #bottombar {
   background-color: #f6d4f5;
+  display: flex;
+  justify-content: space-around;
 }
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  
+}
+
+#info article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
