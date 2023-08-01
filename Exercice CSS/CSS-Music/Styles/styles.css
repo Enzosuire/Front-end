@@ -18,14 +18,11 @@ header {
   width: 50px;
   padding: 5px;
 }
+
 /*Curseur volume */
 .volume {
   display: flex;
-  
 
-
-
-  
 }
 
 .volume input {
@@ -49,6 +46,10 @@ p {
 
 .Titre input {
   width: 100%;
+}
+
+.recherche input {
+  margin: -5px;
 }
 
 /* Menu de navigation */
@@ -77,6 +78,7 @@ nav a {
   text-align: center;
   color: rgb(0, 132, 255);
 }
+
 .pochettes {
   box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.377);
 }
