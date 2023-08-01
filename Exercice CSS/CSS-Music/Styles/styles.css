@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*boutons next et previous*/
+.sons {
+  width: 20%;
+}
+
+.play {
+  display: flex;
+  justify-content: space-around;
+}
+
+.play i {
+  width: 50px;
+  padding: 5px;
+}
+/*Curseur volume */
+.volume {
+  display: flex;
+  
+
+
+
+  
+}
+
+.volume input {
+  width: 70%;
+}
+
+.volume i {
+  width: 50px;
+  padding: 5px;
+}
+
+/*Titre */
+.Titre {
+  width: 30%;
+}
+
+h2,
+p {
+  margin-top: 0;
+}
+
+.Titre input {
+  width: 100%;
+}
+
+/* Menu de navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  border: 1px solid black;
+  list-style: none;
+  width: 100px;
+  padding: 10px;
+  font-size: 1.2em;
+  color: rgb(0, 132, 255);
+}
+
+/*Pochette de music*/
+.album {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+  text-align: center;
+  color: rgb(0, 132, 255);
+}
+.pochettes {
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.377);
+}
+
+.contenue {
+  display: flex;
+}
