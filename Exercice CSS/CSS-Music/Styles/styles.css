@@ -1,7 +1,9 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 
 /*boutons next et previous*/
@@ -11,7 +13,7 @@ header {
 
 .play {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .play i {
@@ -22,7 +24,6 @@ header {
 /*Curseur volume */
 .volume {
   display: flex;
-
 }
 
 .volume input {
@@ -30,7 +31,7 @@ header {
 }
 
 .volume i {
-  width: 50px;
+  width: 40px;
   padding: 5px;
 }
 
@@ -48,16 +49,20 @@ p {
   width: 100%;
 }
 
+/* bouton Recherche*/
 .recherche input {
   margin: -5px;
+}
+
+button {
+  border-radius: 5px;
 }
 
 /* Menu de navigation */
 nav {
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav a {
@@ -68,6 +73,11 @@ nav a {
   padding: 10px;
   font-size: 1.2em;
   color: rgb(0, 132, 255);
+}
+
+#Vidéos {
+  border-top: none;
+  border-bottom: none;
 }
 
 /*Pochette de music*/
@@ -81,8 +91,184 @@ nav a {
 
 .pochettes {
   box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.377);
+  border: 2px solid rgb(218, 211, 211);
+  padding: 5px;
 }
 
 .contenue {
   display: flex;
+}
+
+span {
+  font-size: large;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1200px) {
+  .play i {
+    width: 30px;
+    padding: 5px;
+  }
+
+  .volume i {
+    width: 20px;
+    padding: 5px;
+  }
+
+  .pochettes img {
+    width: 100%;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .play i {
+    width: 30px;
+    padding: 5px;
+  }
+
+  .volume i {
+    width: 20px;
+    padding: 5px;
+  }
+
+  .pochettes img {
+    width: 100%;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .play i {
+    width: 10px;
+    padding: 5px;
+  }
+
+  .volume i {
+    width: 20px;
+    padding: 5px;
+  }
+
+  .sons {
+    width: 25%;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .play i {
+    width: 100px;
+    padding: 5px;
+  }
+
+  .volume i {
+    width: 70px;
+    padding: 5px;
+  }
+
+  .sons {
+    width: 100%;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .recherche input {
+    margin-top: 70px;
+  }
+
+  .Titre {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contenue {
+    display: block;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .recherche {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  .recherche input {
+    width: 90%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .recherche button {
+    width: 10%;
+    padding: 5px;
+  }
+
+  .Titre {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 95%;
+  }
+
+  .Titre input {
+    width: 98%;
+  }
+
+  .play i {
+    width: 80px;
+    padding: 5px;
+  }
+
+  #démarer i {
+    width: 10%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
