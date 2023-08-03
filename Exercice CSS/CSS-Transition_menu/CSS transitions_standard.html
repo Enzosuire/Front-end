@@ -1,132 +1,129 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0078)https://www.alsacreations.com/xmedia/tuto/exemples/transitions/infobulles.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS transitions</title>
 
-	<title>CSS transitions</title>
+    <meta name="author" content="Benjamin De Cock" />
 
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
 
-	<meta name="author" content="Benjamin De Cock">
+      ul {
+        font: 0.75em "lucida grande", arial, sans-serif;
+        overflow: hidden;
+        width: 570px;
+        padding: 0 0 30px 30px;
+        margin: 30px auto;
+        background: #eee;
+        list-style: none;
+      }
 
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-			border: 0;
-		}
+      li {
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        float: left;
+        margin: 30px 30px 0 0;
+		
+      }
 
-		ul {
-			font: .75em "lucida grande", arial, sans-serif;
-			overflow: auto;
-			width: 570px;
-			padding: 0 0 30px 30px;
-			margin: 30px auto;
-			background: #eee;
-			list-style: none;
-		}
+      p {
+        height: 40px;
+        padding: 0 10px;
+        opacity: 0.8;
+        color: #fff;
+        background: #000;
+		transition: linear 1s;
+      }
 
-		li {
-			width: 160px;
-			height: 160px;
-			overflow: hidden;
-			float: left;
-			margin: 30px 30px 0 0;
-		}
-
-		p {
-			height: 40px;
-			padding: 0 10px;
-			opacity: .8;
-			color: #fff;
-			background: #000;
-
-		}
-
-
-
-		strong {
-			display: block;
-			padding-top: 3px;
-			font-weight: 700;
-		}
-	</style>
-
-</head>
+      strong {
+        display: block;
+        padding-top: 3px;
+        font-weight: 700;
+      }
 
 
-<body>
-	<!--<p style="background-color:#FF0000; margin-left:-170px; width:150px">dfduhfdufudfdf</p>-->
+	  li:hover p {
+		margin-top: -40px;
+		
+	  }
+    </style>
+  </head>
 
-	<ul>
-		<li>
-			<img src="./CSS transitions_files/10.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/20.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/30.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/40.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/50.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/60.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/70.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/80.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-		<li>
-			<img src="./CSS transitions_files/90.jpg" alt="">
-			<p>
-				<strong>Info:</strong>
-				Lorem ipsum dolor
-			</p>
-		</li>
-	</ul>
+  <body>
+    <!--<p style="background-color:#FF0000; margin-left:-170px; width:150px">dfduhfdufudfdf</p>-->
 
-
-
-</body>
-
+    <ul>
+      <li>
+        <img src="./CSS transitions_files/10.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/20.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/30.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/40.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/50.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/60.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/70.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/80.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+      <li>
+        <img src="./CSS transitions_files/90.jpg" alt="" />
+        <p>
+          <strong>Info:</strong>
+          Lorem ipsum dolor
+        </p>
+      </li>
+    </ul>
+  </body>
 </html>

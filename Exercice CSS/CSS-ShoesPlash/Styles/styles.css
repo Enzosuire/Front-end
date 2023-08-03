@@ -1,5 +1,6 @@
 header {
   background-color: #f6d4f5;
+  width: 100%;
 }
 
 p {
@@ -9,19 +10,15 @@ p {
 /*Placement des boutons menu*/
 nav {
   display: flex;
-  flex-direction: row;
-  margin-right: 40%;
-  margin-left: 10%;
-  padding: 15px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 nav a {
   text-decoration: none;
   list-style: none;
-  margin-right: 20%;
   color: black;
   text-transform: uppercase;
-  padding: 20px;
 }
 
 nav a:hover {
@@ -42,23 +39,24 @@ nav a:hover {
 .right {
   display: flex;
   align-items: center;
-  text-align: right;
-  justify-content: flex-end;
   margin-right: 25px;
   width: fit-content;
 }
 
 .right i {
-  position: relative;
-  left: 5%;
   color: #e48de1;
   font-size: 25px;
+  margin-left: 5px;
+}
+
+.head-imagepanier {
+  display: flex;
+  justify-content: space-between;
 }
 
 #cart {
-  position: absolute;
-  left: 85%;
-  bottom: 88%;
+  margin-bottom: 80px;
+
   text-align: center;
 }
 
@@ -83,14 +81,19 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  position: relative;
 }
 
 #slider h2 {
   position: absolute;
-  background-color: #F6D4F5;
+  background-color: #f6d4f5;
   opacity: 0.8;
   padding: 10px;
   margin-top: 0px;
+}
+
+span {
+  font-size: medium;
 }
 
 /*images escarpin */
@@ -101,7 +104,6 @@ body {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 #select:hover {
@@ -117,7 +119,6 @@ body {
 #select h1 {
   width: 100%;
   margin-left: 10px;
-
 }
 
 /*3 éléments*/
@@ -167,8 +168,6 @@ h3 {
   font-family: "Courgette", cursive;
 }
 
-
-
 /*footer*/
 
 footer {
@@ -185,7 +184,6 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-
 }
 
 #info article {
@@ -194,16 +192,56 @@ footer {
   align-items: center;
 }
 
-
-
 /* Responsive pour téléphone*/
 
-
 @media screen and (max-width: 640px) {
-
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
 
+  nav a {
+    padding: 15px;
+  }
+
+  #slider h2 {
+    position: inherit;
+  }
+
+  #news {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  #select {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #cart {
+    display: none;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info article {
+    padding: 10px;
+  }
+
+  #bottombar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1 {
+    text-align: center;
+    width: 100%;
   }
 }
