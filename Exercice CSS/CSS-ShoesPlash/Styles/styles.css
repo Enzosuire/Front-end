@@ -106,19 +106,20 @@ span {
   margin-bottom: 20px;
 }
 
-#select:hover {
-  transition: ease-in-out 0.2s;
-  opacity: 0.5;
-}
 
-.escarpin:focus {
+
+.escarpin:hover, .escarpin1:hover{
   transition: ease-in-out;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 #select h1 {
   width: 100%;
   margin-left: 10px;
+}
+
+.escarpin1 {
+  margin-top: 25px;
 }
 
 /*3 éléments*/

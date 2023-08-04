@@ -75,6 +75,10 @@ nav a {
   color: rgb(0, 132, 255);
 }
 
+nav a:hover {
+  background-color: rgb(163, 181, 187);
+}
+
 #Vidéos {
   border-top: none;
   border-bottom: none;
