@@ -1,6 +1,6 @@
 header {
     background-color: rgba(255, 115, 0, 0.963);
-    border: 2px solid;
+
 
 
 }
@@ -14,7 +14,7 @@ body {
 /*header*/
 
 .entete {
-    border: 2px solid;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,18 +24,30 @@ body {
 }
 
 /*logo*/
+
+
+
 .logo {
     border: 2px solid;
     width: 20%;
     text-transform: capitalize;
     color: white;
+    align-items: center;
+    display: flex;
+
 
 }
 
 span i {
-    padding: 20px;
+    padding: 15px;
     color: white;
     font-size: 2em;
+
+}
+
+.logo span {
+    font-size: 1.3em;
+    font-weight: bold;
 
 }
 
@@ -103,9 +115,9 @@ span {
 /*Bar du haut*/
 .topbar {
     background-color: rgb(40, 37, 37);
-    padding: 1px;
     display: flex;
     justify-content: space-between;
+    font-size: x-large;
 
 
 }
@@ -113,17 +125,35 @@ span {
 .topbar p {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(55, 128, 0);
+
+
 }
 
 .topbar span {
     color: white;
+    font-size: x-large;
+
+
 }
 
 .topbar button {
     background-color: rgb(55, 128, 0);
     border: none;
     border-radius: 5px;
-    width: 8%;
-    margin: 15px;
+    width: 7%;
+    margin: 20px;
 
+}
+
+.envato {
+    color: rgb(55, 128, 0);
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+
+
+}
+
+.envato i {
+    margin-right: 5px;
 }

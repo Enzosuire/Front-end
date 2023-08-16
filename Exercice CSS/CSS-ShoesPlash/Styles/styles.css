@@ -108,7 +108,8 @@ span {
 
 
 
-.escarpin:hover, .escarpin1:hover{
+.escarpin:hover,
+.escarpin1:hover {
   transition: ease-in-out;
   opacity: 0.5;
 }
