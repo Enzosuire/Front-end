@@ -101,6 +101,13 @@ span {
   display: flex;
   justify-content: space-between;
   font-size: x-large;
+ /* position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+  
+ */
+
 }
 
 .topbar p {
