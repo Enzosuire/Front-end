@@ -12,13 +12,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 65px;
+  margin-top: 70px;
 }
 
 /*logo*/
 
 .logo {
-  border: 2px solid;
   width: 20%;
   text-transform: capitalize;
   color: white;
@@ -87,7 +86,7 @@ span {
   background-color: rgba(255, 115, 0, 0.963);
   color: white;
   border: none;
- 
+
 }
 
 /*Joueur de basket*/
@@ -106,8 +105,8 @@ span {
   top: 0%;
   width: 100%;
   z-index: 1;
-  
- 
+
+
 
 }
 
@@ -139,3 +138,21 @@ span {
 .envato i {
   margin-right: 5px;
 }
+
+
+
+.last {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  
+}
+
+#titre2{
+ 
+  font-size: 2.5em;
+
+}
+
+
+
