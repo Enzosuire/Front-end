@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 65px;
 }
 
 /*logo*/
@@ -101,12 +102,12 @@ span {
   display: flex;
   justify-content: space-between;
   font-size: x-large;
- /* position: fixed;
+  position: fixed;
   top: 0%;
   width: 100%;
   z-index: 1;
   
- */
+ 
 
 }
 
