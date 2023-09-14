@@ -83,10 +83,9 @@ span {
   padding: 20px;
   width: 20%;
   font-size: small;
-  background-color:#eb592a;
+  background-color: #eb592a;
   color: white;
   border: none;
-
 }
 
 /*Joueur de basket*/
@@ -105,9 +104,6 @@ span {
   top: 0%;
   width: 100%;
   z-index: 1;
-
-
-
 }
 
 .topbar p {
@@ -124,8 +120,8 @@ span {
   background-color: rgb(55, 128, 0);
   border: none;
   border-radius: 5px;
-  width: 7%;
-  margin: 20px;
+  width: 8%;
+  margin: 12px;
 }
 
 .envato {
@@ -139,19 +135,14 @@ span {
   margin-right: 5px;
 }
 
-
-
 .last {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-
 }
 
 #titre2 {
-
   font-size: 2.5em;
-
 }
 
 /*Partie score et equipe*/
@@ -164,8 +155,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
-  box-shadow: 5px 5px 10px 10px  rgb(233, 226, 226);
-
+  box-shadow: 5px 5px 10px 10px rgb(233, 226, 226);
 }
 
 /*Partie score du match*/
@@ -173,13 +163,10 @@ span {
   display: flex;
   justify-content: space-around;
   width: 100%;
-
 }
-
 
 #titre3 {
   font-size: 4em;
- 
 }
 
 #titre4 {
@@ -191,33 +178,26 @@ span {
 }
 
 .logoballon1 img {
- width: 100%;
-  
+  width: 100%;
 }
 .logoballon1 h2 {
   display: flex;
-  justify-content: center;  
- 
+  justify-content: center;
 }
 /* equipe GRIZZLIES*/
-.logoballon2{
+.logoballon2 {
   margin-right: 50px;
 }
 .logoballon2 img {
   width: 100%;
- 
 }
 
 .logoballon2 h2 {
   display: flex;
-  justify-content: center; 
-  
- 
+  justify-content: center;
 }
 
-
 /* Button partie score et equipe*/
-
 
 .score button {
   display: flex;
@@ -229,28 +209,39 @@ span {
   color: white;
   border: none;
   margin-top: 30px;
-
 }
 
 .next {
   border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-top: 10%;
 }
 
-
-.next button {
+.schedule,
+button {
   padding: 20px;
-  width: 10%;
+  width: 100%;
   font-size: small;
   background-color: #eb592a;
   color: white;
   border: none;
-  margin-top: 30px;
-
 }
 
 #titre5 {
-
   font-size: 1.5em;
- 
-
 }
+
+.Match2 {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  padding: 30px;
+  box-shadow: 5px 5px 10px 10px rgb(233, 226, 226);
+  
+}
+
