@@ -1,0 +1,43 @@
+body {
+  background-image: url(../Media/m-ashraful-alam-oixYHidbd8Y-unsplash.jpg);
+}
+
+button {
+  padding: 15px;
+  margin: 8px;
+  background-color: rgb(209, 36, 36);
+  border-radius: 5px;
+
+}
+
+.casecache {
+  background-color: #da9b76;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Crimson Text', serif;
+}
+
+.sectionspan {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sectionbutton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.sectionmot {
+  display: flex;
+  justify-content: center;
+}
+
+.span-lettre {
+  width: 10px;
+}

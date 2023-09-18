@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+   ;
+}
+
+div {
+    padding: 40px;
+    border: 2px solid black
+}

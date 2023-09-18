@@ -1,0 +1,41 @@
+main {
+  display: block;
+  justify-content: center;
+  border: 2px solid;
+  background-color: rgb(240, 240, 230);
+  margin-top: 50px;
+  padding: 100px;
+  border-radius: 5px;
+  opacity: 0.9;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: url(../Media/thimo-pedersen-dip9IIwUK6w-unsplash.jpg) no-repeat
+    fixed;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 150px;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+  padding: 10px;
+}
+
+img {
+  width: 40%;
+}
+
+.resultat {
+  text-align: center;
+}

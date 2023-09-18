@@ -1,0 +1,78 @@
+* {
+  border-collapse: collapse;
+ 
+}
+
+td {
+    
+  border: 0.2px solid black;
+  padding: 30px;
+}
+table {
+ 
+    margin: 20px;
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ background-color: rgb(228, 213, 195);
+ 
+}
+.casenoire {
+  background-color: black;
+}
+
+
+
+/*#case2 .colonne1,
+#case4 .colonne1,
+#case6 .colonne1,
+#case8 .colonne1 {
+  background-color: black;
+}
+#case1 .colonne2,
+#case3 .colonne2,
+#case5 .colonne2,
+#case7 .colonne2 {
+  background-color: black;
+}
+
+#case2 .colonne3,
+#case4 .colonne3,
+#case6 .colonne3,
+#case8 .colonne3 {
+  background-color: black;
+}
+#case1 .colonne4,
+#case3 .colonne4,
+#case5 .colonne4,
+#case7 .colonne4 {
+  background-color: black;
+}
+
+#case2 .colonne5,
+#case4 .colonne5,
+#case6 .colonne5,
+#case8 .colonne5 {
+  background-color: black;
+}
+#case1 .colonne6,
+#case3 .colonne6,
+#case5 .colonne6,
+#case7 .colonne6 {
+  background-color: black;
+}
+
+#case2 .colonne7,
+#case4 .colonne7,
+#case6 .colonne7,
+#case8 .colonne7 {
+  background-color: black;
+}
+#case1 .colonne8,
+#case3 .colonne8,
+#case5 .colonne8,
+#case7 .colonne8 {
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  type="module" src="./Script/fetcth.js" defer ></script>
+    <link rel="stylesheet" href="./Script/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokemon </title>
+</head>
+<body>
+
+<main >
+
+   <form id="monformulaire" name="FormPokemon" action="post">
+        <h1>INFORMATIONS POKEMON</h1>
+        <fieldset>
+        <legend id="titre">Séléctionnez un Pokemon</legend>
+            <input type="radio" id="Pikachu" name="POKEMON" value="Pikachu" checked/> Pikachu<br>
+            <input type="radio"  id="Carapuce" name="POKEMON" value="Carapuce" /> Carapuce<br>
+            <input type="radio"  id="Bulbizarre" name="POKEMON" value="Bulbizarre" /> Bulbizarre<br>
+            <input type="radio"  id="Salaméche" name="POKEMON" value="Salaméche" /> Salaméche
+          </fieldset>
+         <p>Pour connaitre ses caractéristiques  <button type="submit">Chercher via JS</button></p>
+   </form>
+   <section class="resultat">
+        <h2></h2>
+        <img src="" alt="image pokemon">
+        <p></p>
+        <p></p>
+   </section>
+</main> 
+</body>
+</html>
