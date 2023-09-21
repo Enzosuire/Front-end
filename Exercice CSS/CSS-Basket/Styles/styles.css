@@ -121,7 +121,8 @@ span {
   border: none;
   border-radius: 5px;
   width: 8%;
-  margin: 12px;
+  margin: 10px;
+  
 }
 
 .envato {
@@ -212,12 +213,13 @@ span {
 }
 
 .next {
-  border: 2px solid;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  margin-top: 10%;
+  margin-top: 7%;
+ 
 }
 
 .schedule,
@@ -226,12 +228,14 @@ button {
   width: 100%;
   font-size: small;
   background-color: #eb592a;
-  color: white;
   border: none;
+  background-color: white;
+
 }
 
 #titre5 {
   font-size: 1.5em;
+  color: white;
 }
 
 .Match2 {
@@ -241,7 +245,19 @@ button {
   align-items: center;
   width: 35%;
   padding: 30px;
-  box-shadow: 5px 5px 10px 10px rgb(233, 226, 226);
+  background-color: white;
   
 }
 
+
+.orange{
+  background: #eb592a;
+  height: 250px;
+  position: absolute;
+  z-index: -1;
+  width: 110%;
+  height: 55%;
+  margin-top: 4%;
+  transform: rotate(-5deg)translateX(-50px) ;
+  overflow: hidden;
+}
