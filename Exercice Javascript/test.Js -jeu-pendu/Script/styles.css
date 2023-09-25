@@ -1,5 +1,8 @@
 body {
   background-image: url(../Media/m-ashraful-alam-oixYHidbd8Y-unsplash.jpg);
+  font-size: 1.5em;
+  font-family: 'Crimson Text', serif;
+  color: white;
 }
 
 button {
@@ -23,8 +26,10 @@ h1 {
 .sectionspan {
   display: flex;
   justify-content: center;
+  margin-top: 150px;
 
 }
+
 
 .sectionbutton {
   display: flex;

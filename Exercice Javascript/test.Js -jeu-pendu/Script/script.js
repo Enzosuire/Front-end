@@ -1,13 +1,11 @@
-console.log("script chargé");
+console.log("Script chargé");
 
 const UNELettre = document.createElement("div");
 document.body.appendChild(UNELettre);
 
-
 const UNEsectionbutton = document.createElement("section");
 UNEsectionbutton.classList = "sectionbutton";
 UNELettre.appendChild(UNEsectionbutton);
-
 
 const UNEsectionspan = document.createElement("section");
 UNEsectionspan.classList = "sectionspan";
@@ -17,16 +15,14 @@ const UNEsectionmot = document.createElement("section");
 UNEsectionmot.classList = "sectionmot";
 UNELettre.appendChild(UNEsectionmot);
 
-
 let compteur = 0;
-
 
 const UNELettrearray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 console.log(UNELettre);
 
-const MOTtrouve = "LAC";
-let lettresMystere = MOTtrouve.split("");
-console.log("Lettres du mot mystere : ", lettresMystere);
+const MOTstrouve = ["LAC", "CHIEN", "CHAT", "OISEAU", "VOITURE", "ORDINATEUR", "MAISON"];
+let lettresMystere = MOTstrouve[Math.floor(Math.random() * MOTstrouve.length)].split("");
+console.log("Lettres du mot mystère : ", lettresMystere);
 
 for (let i = 0; i < UNELettrearray.length; i++) {
   console.log("button");
@@ -36,6 +32,7 @@ for (let i = 0; i < UNELettrearray.length; i++) {
   UNEsectionbutton.appendChild(malettrebutton);
   malettrebutton.classList.add("casecache");
 }
+
 for (let index = 0; index < lettresMystere.length; index++) {
   let monmot = document.createElement("span");
   monmot.textContent = "-";
@@ -55,9 +52,7 @@ document.body.appendChild(essaisRestantsText);
 let perduMessage = document.createElement("p");
 document.body.appendChild(perduMessage);
 
-
-
-console.log("les tirets : ", lesTirets);
+console.log("Les tirets : ", lesTirets);
 
 document.querySelectorAll(".casecache").forEach(bouton => {
   bouton.addEventListener("click", (detailEvenement) => {
@@ -71,8 +66,11 @@ document.querySelectorAll(".casecache").forEach(bouton => {
         motTrouve = true;
         lesTirets[index].textContent = lettresMystere[index];
         compteur++;
-        if (compteur === lettresMystere) {
+        if (compteur === lettresMystere.length) {
           console.log("Mot trouvé !");
+          const gagneMessage = document.createElement("p");
+          gagneMessage.textContent = "Félicitations, vous avez trouvé le mot : " + lettresMystere.join("") + " ";
+          document.body.appendChild(gagneMessage);
         }
       }
     }
@@ -83,19 +81,10 @@ document.querySelectorAll(".casecache").forEach(bouton => {
       console.log("Essais restants : " + essaisRestants);
       essaisRestantsText.textContent = "Essais restants : " + essaisRestants;
 
-
-
       if (essaisRestants === 0) {
         console.log("Perdu !");
-        let perduMessage = document.createElement("p");
-        perduMessage.textContent = "Désolé, vous avez perdu ! Le mot mystère était " + MOTtrouve + "'.";
-        document.body.appendChild(perduMessage);
-
-
-
+        perduMessage.textContent = "Désolé, vous avez perdu ! Le mot mystère était '" + lettresMystere.join("") + "'.";
       }
     }
   });
-})
-
-
+});
