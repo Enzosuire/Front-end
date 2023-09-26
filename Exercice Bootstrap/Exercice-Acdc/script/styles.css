@@ -1,0 +1,66 @@
+@font-face {
+    font-family:'HARD';
+    src: url(../media/fonts/HARD_ROCK.ttf);
+}
+
+@font-face {
+    font-family: 'TheDark';
+    src: url(../media/fonts/TheDark.ttf);
+}
+
+
+@font-face {
+    font-family: 'Rock';
+    src: url(../media/fonts/rocknroll_typo_crazy.ttf);
+}
+
+
+body {
+    background-color: rgb(189, 15, 15) ;
+}
+
+h1{
+    font-size: 1.3em; 
+    font-family: 'TheDark';
+    color: white;
+}
+
+.card-text{
+    font-family: 'TheDark';
+}
+.card-titre{
+    color: red;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: 'Rock';
+    font-size: 1.4em;
+}
+
+thead {
+    color: red;
+}
+
+
+::placeholder{
+font-family: 'TheDark' ;
+color: red;
+}
+
+.bi{
+color: red;
+}
+
+.titre{
+    color: white;
+    font-family: 'TheDark';
+    font-size: 2em;
+}
+
+.titre2{
+    color: white;
+    font-family: 'TheDark';
+    font-size: 1.4em;
+}
+
