@@ -1,0 +1,48 @@
+body {
+  background: #f0c77a;
+  font-size: 20px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.nav-button, .help, .about, .home {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #777;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.home {
+  font-weight: bold;
+}
+
+button {
+  width: 100px;
+}
+
+.content {
+  background-color: #777;
+}
+.content ul {
+  list-style: none;
+}
+.content li {
+  float: left;
+}
+.content li a:link, .content li a:visited {
+  color: #4e4f48;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px;
+}
+.content li a:hover {
+  color: #fff;
+  background: #686a60;
+}
+
+/*# sourceMappingURL=main.css.map */

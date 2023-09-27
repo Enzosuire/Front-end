@@ -1,0 +1,24 @@
+.nav-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #777;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.home{
+    @extend.nav-button;
+    font-weight: bold;
+}
+
+.about {
+    @extend.nav-button;
+}
+.help {
+    @extend.nav-button;
+}
+
+button{
+    width: calc(200px/2);
+}

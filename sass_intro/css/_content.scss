@@ -1,0 +1,25 @@
+.content {
+    background-color: $content-background-color;
+    ul{
+        list-style: none;
+    }
+    li{
+        float: left;
+    a{
+        &:link,
+        &:visited{
+        color: #4e4f48;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    &:hover {
+        color: #fff;
+        background: lighten(#4e4f48,10%);
+
+    }
+  }
+ }
+}
+

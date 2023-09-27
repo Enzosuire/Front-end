@@ -15,8 +15,9 @@
 }
 
 
-body {
-    background-color: rgb(189, 15, 15) ;
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    background: linear-gradient(118deg, rgb(17, 17, 17) 0%,rgb(17, 17, 17) 20%,#e92424 20%,#e92424 40%,black 40%,black 80%, #e92424 80%, #e92424 100%);
 }
 
 h1{
@@ -64,3 +65,6 @@ color: red;
     font-size: 1.4em;
 }
 
+.son{
+    color: white;
+}
