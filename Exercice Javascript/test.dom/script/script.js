@@ -7,18 +7,20 @@ console.log("exercice good");
 window.addEventListener("DOMContentLoaded", () => {
   // Toujours utiliser une boucle for avec querySelectorAll
   let balisesH2 = document.querySelectorAll("h2");
+  console.log(balisesH2);
 
   // Utilisez :nth-child au lieu de :nth-Child
   let baliseli = document.querySelector("li:nth-child(3)");
-
-  console.log(balisesH2);
-  console.log(baliseli);
+  console.log(baliseli.parentElement.previousElementSibling);
 
   let classrow = document.querySelectorAll(".row");
   console.log(classrow);
 
-  let titre2 = document.querySelector("#titre2");
-  console.log(titre2);
+  // let titre2 = document.querySelector("#titre2");
+  // console.log(titre2);
+
+  let balisep =document.querySelector("#titre2 + p");
+  balisep.previousElementSibling.innerText = "texte modifié";
 
   for (let row of classrow) {
     console.log(row);
@@ -58,6 +60,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //création function 
 
+//opérateur this sera determiné par la fonction apellée 
+
 function changecouleur(){
     this.style.color="yellow";
 }
@@ -68,5 +72,7 @@ function ajoutbordures (){
 }
 
 function retraitbordures (){
-    this.style.border =" none";
+    this.style.border ="none";
 }
+
+
