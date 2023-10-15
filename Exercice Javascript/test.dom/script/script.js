@@ -4,7 +4,7 @@
 
 console.log("exercice good");
 
-window.addEventListener("DOMContentLoaded", () => {
+// window.addEventListener("DOMContentLoaded", () => {
   // Toujours utiliser une boucle for avec querySelectorAll
   let balisesH2 = document.querySelectorAll("h2");
   console.log(balisesH2);
@@ -13,6 +13,9 @@ window.addEventListener("DOMContentLoaded", () => {
   let baliseli = document.querySelector("li:nth-child(3)");
   console.log(baliseli.parentElement.previousElementSibling);
 
+  // let baliseli = document.querySelector("li:first-child");
+  // console.log(baliseli);
+
   let classrow = document.querySelectorAll(".row");
   console.log(classrow);
 
@@ -20,7 +23,14 @@ window.addEventListener("DOMContentLoaded", () => {
   // console.log(titre2);
 
   let balisep =document.querySelector("#titre2 + p");
+  //pas de console log le changement s'affiche pas dans la console
   balisep.previousElementSibling.innerText = "texte modifié";
+
+
+  //trouver la derniére balise li et parentElement tu retrouve le UL qui emglobe le li
+  
+  // let baliseli = document.querySelector("li:last-child");
+  // console.log(baliseli.parentElement)
 
   for (let row of classrow) {
     console.log(row);
@@ -45,18 +55,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //Déclaration d'une fonction pour pouvoir la réutiliser dans plusieurs cas
 
-    for (let baliseH2 of balisesH2) {
-        baliseH2.addEventListener("click", changecouleur)
-        };
+//     for (let baliseH2 of balisesH2) {
+//         baliseH2.addEventListener("click", changecouleur)
+//         };
 
 
-        baliseli.addEventListener("click", changecouleur);
-        baliseli.addEventListener("mouseenter",ajoutbordures);
-        baliseli.addEventListener("mouseleave",retraitbordures);
+//         baliseli.addEventListener("click", changecouleur);
+//         baliseli.addEventListener("mouseenter",ajoutbordures);
+//         baliseli.addEventListener("mouseleave",retraitbordures);
 
-  }
+//   }
   
-);
+// );
 
 //création function 
 
@@ -75,4 +85,65 @@ function retraitbordures (){
     this.style.border ="none";
 }
 
+
+
+
+// Manipulez les dates
+
+
+//déclarer la date d'aujourdhui
+
+
+let maDate = new Date();
+
+
+console.log (maDate);
+
+
+//déclarer une autre date date défini
+
+//entre paranthése c'est le paramétre de la date du debut en 1970 il ya deux maniére de l'écricre
+
+// let autreDate = new Date(2020,0,11,15,25,10);
+
+let autreDate = new Date("2020-01-12 14:25:48");
+
+// console.log (autreDate.getDate()); getDay() et getMonth() getTime() getHours()
+
+
+//afficher l'élément date dans une balise html avec un id
+// document.getElementById("date").textContent= autreDate;
+
+
+// changer les parametres d'une date 
+
+// autreDate.setFullYear(2021);
+// autreDate.setMonth(7);
+// autreDate.setDate(1);
+
+console.log (autreDate);
+
+
+
+
+
+// Temps entre deux dates
+
+let temps = maDate - autreDate ;
+
+console.log(temps);
+
+// Dans un jour il y 24 h * 60mn * 60s * 1000 = 86400000 ms
+
+let jour = Math.floor(temps / 86400000);
+
+//reste temps - (jours * durée)
+
+let reste = temps - jour * 86400000;
+
+// Heures : 60 mn * 60s * 1000 = 3600000ms
+
+let Heures = Math.floor(reste/3600000);
+
+console.log (Heures);
 
