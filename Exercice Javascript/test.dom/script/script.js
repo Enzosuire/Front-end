@@ -147,3 +147,39 @@ let Heures = Math.floor(reste/3600000);
 
 console.log (Heures);
 
+
+//Opérateur Ternaire ?:
+
+let nombre = -5;
+let texte;
+// if (nombre >=0){
+//   texte= ("Le nombre est positif ou nul");
+// }else{
+//   texte= ("Le nombre est négatif");
+// }
+
+texte = (nombre >=0) ? "Le nombre est positif ou nul" : "Le nombre est négatif";
+
+console.log(texte);
+
+
+let baliseH2 = document.querySelector("#titre1");
+
+//Sans utiliser l'opérateur ternaire
+
+// baliseH2.addEventListener("click",function(){
+//   if(this.innerText === "Sous-titre"){
+// this.innerText = "Sous-titre cliqué";
+// this.style.color="yellow";
+//   }else{
+//     this.innerText = "Sous-titre";
+
+// }
+// });
+
+//En utilisant l'opérateur ternaire
+
+baliseH2.addEventListener("click",function(){
+ this.innerText =(this.innerText === "Sous-titre")
+ ? "Sous-titre cliqué" : "Sous-titre";
+});
