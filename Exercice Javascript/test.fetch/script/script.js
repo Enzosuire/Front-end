@@ -1,6 +1,27 @@
+console.log("script chargé");
+
+// fetch('https://jsonplaceholder.typicode.com/posts')
+
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+
+// function callApi(){
+//       const url = "data.json"
+//      fetch(url)
+//      .then(response => response.json())
+//      .then(data => console.log(data))
+
+// }
 
 
-fetch('https://jsonplaceholder.typicode.com/posts')
+function callApi(){
+      const url = "data.json"
+     fetch(url)
+     .then(response => response.json())
+     .then(data => {
+     
+     document.querySelector("#result").innerHTML = data.prenom
+     })
+}
 
-      .then(response => response.json())
-      .then(json => console.log(json))
+
