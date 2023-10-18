@@ -183,3 +183,13 @@ baliseH2.addEventListener("click",function(){
  this.innerText =(this.innerText === "Sous-titre")
  ? "Sous-titre cliqué" : "Sous-titre";
 });
+
+
+let baliseinput = document.querySelector("#myText");
+
+baliseinput.addEventListener("keypress", () =>{
+
+  console.log(baliseinput.value);
+
+
+})
