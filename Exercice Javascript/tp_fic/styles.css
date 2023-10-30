@@ -36,3 +36,42 @@
       .cardinal {
         background-color: #993333;
       }
+
+      li{
+        list-style: none;
+      }
+
+
+      #sortable {
+
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+
+      }
+
+      #sortable li{
+
+        margin: 0 3px 3px 3px;
+        padding: 0.4em;
+        padding-left: 1.5em;
+        font-size: 1em;
+        height: 12px;
+        border: 1px solid black;
+        
+
+      }
+
+      #sortable li span{
+
+        position: absolute;
+        margin-left: -1.3em;
+        
+
+      }
+
+
+
+
+     

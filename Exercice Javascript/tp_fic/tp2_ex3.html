@@ -9,6 +9,7 @@
     <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
     <link rel="stylesheet" href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.min.css" />
+    <link rel="stylesheet" href="./styles.css">
     <style>
 
       #name_input {
@@ -45,8 +46,7 @@
        /* Etape 1: Votre code JS doit être ici */
 
       $( function() {
-      
-     $( "#date" ).datepicker ({ maxDate: "-2w"
+         $( "#date" ).datepicker ({ maxDate: "-2w"
 
      });
      
@@ -54,9 +54,22 @@
 
       /* Etape 2: Votre code JS doit être ici */
 
+      $( "#year_list" ).selectable();
+      
+
+     
+
       /* Etape 3: Votre code JS doit être ici */
 
+      $( function() {
+     $( "#sortable" ).sortable().disableSelection();
+     });
+
       /* Etape 4: Votre code JS doit être ici */
+
+      $( function() {
+     $( "#year_list").tooltip();
+     } );
 
     });
     </script>
@@ -74,10 +87,15 @@
     </div>
     <div id="year_input">
 	<h3>En quelle année êtes vous ?</h3>
-      <input type="radio" name="enroll_year" id="ugrad" value="ugrad"> 
+      <!-- <input type="radio" class="selectable" name="enroll_year" id="ugrad" value="ugrad"> 
       <label for="ugrad">EI4</label>
-      <input type="radio" name="enroll_year" id="grad" value="grad"> 
-      <label for="grad">EI5</label>
+      <input type="radio" class="selectable" name="enroll_year" id="grad" value="grad"> 
+      <label for="grad">EI5</label> -->
+
+      <ul id="year_list">
+        <li class="selectable ui-widget-content">EI4</li>
+        <li class="selectable ui-widget-content">EI5</li>
+      </ul>
 
       <!-- Etape 2: Code HTML ici -->
     </div>
@@ -86,7 +104,7 @@
       
       <h3> Classer la liste  des couleurs : de celle que vous préférez (1) à celle qui retient le moins votre attention (5).</h3>
       
-      <input type="text" class="rank_color" id="red" />
+      <!-- <input type="text" class="rank_color" id="red" />
       <label for="red">#ff0000</label><br/>
       <input type="text" class="rank_color" id="blue" />
       <label for="blue">#0000ff</label><br/>
@@ -95,9 +113,20 @@
       <input type="text" class="rank_color" id="mustard" />
       <label for="mustard">#ded447</label><br/>
       <input type="text" class="rank_color" id="dark_green" />
-      <label for="dark_green">#125e18</label><br/>
+      <label for="dark_green">#125e18</label><br/> -->
 
       <!-- Etape 3: Code HTML Ici -->
+
+      <ul id="sortable">
+
+      <li class="ui-statedefault"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ff0000</li>
+      <li class="ui-statedefault"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#0000ff</li>
+      <li class="ui-statedefault"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ff00b3</li>
+      <li class="ui-statedefault"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ded447</li>
+      <li class="ui-statedefault"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#125e18</li>
+
+      </ul>
+
 
     </div>
 
