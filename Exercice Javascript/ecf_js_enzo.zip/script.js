@@ -90,7 +90,7 @@ function AfficherLivres(selectedAuthor, selectedCategory, data) {
 
 // Fonction pour initialiser les listes déroulantes des auteurs et des catégories
 function NomAutCat() {
-  // URL du fichier JSON contenant les données des livres
+  
   const fileURL = './books.json';
 
   // Récupère les éléments de liste déroulante des auteurs et des catégories
@@ -120,8 +120,14 @@ function NomAutCat() {
     .then((response) => response.json())
     .then((data) => {
       //création deux objets Set distincts c'est pour stocker des valeurs uniques dont les auteurs 
+
       const authorsSet = new Set();
       const categoriesSet = new Set();
+
+      // const sortedAuthors = [...authorsSet].sort();
+      // const sortedCategories = [...categoriesSet].sort();
+
+     
 
       // Parcourt les données pour collecter les auteurs uniques et les catégories uniques
       data.forEach((book) => {
@@ -132,9 +138,13 @@ function NomAutCat() {
         if (book.categories) {
           book.categories.forEach((category) => {
             categoriesSet.add(category);
+
+
+
           });
         }
       });
+     
 
       // Ajoute les options des auteurs et des catégories aux éléments de liste déroulante
       authorsSet.forEach((author) => {
