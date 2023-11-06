@@ -97,23 +97,12 @@ function NomAutCat() {
   const selectElement = document.getElementById('auteurSelect');
   const selectCategories = document.getElementById('catégorieselect');
 
-  // Écoute l'événement de changement de l'élément de liste déroulante des auteurs
-  selectElement.addEventListener('change', function () {
-    selectCategories.disabled = true;
-    selectCategories.selectedIndex = 0;
-    const selectedAuthor = selectElement.value;
-    // Appelle la fonction pour afficher les livres en fonction de l'auteur sélectionné
-    AfficherLivres(selectedAuthor, null, data);
-  });
-
-  // Écoute l'événement de changement de l'élément de liste déroulante des catégories
-  selectCategories.addEventListener('change', function () {
-    selectElement.disabled = true;
-    selectElement.selectedIndex = 0;
-    const selectedCategory = selectCategories.value;
-    // Appelle la fonction pour afficher les livres en fonction de la catégorie sélectionnée
-    AfficherLivres(selectedCategory, null, data);
-  });
+// Fonction pour appliquer les filtres et afficher les livres
+function applyFilters() {
+  const selectedAuthor = selectElement.value;
+  const selectedCategory = selectCategories.value;
+  AfficherLivres(selectedAuthor, selectedCategory, data);
+}
 
   // Charge les données des livres depuis le fichier JSON
   fetch(fileURL)
@@ -124,55 +113,72 @@ function NomAutCat() {
       const authorsSet = new Set();
       const categoriesSet = new Set();
 
-      // const sortedAuthors = [...authorsSet].sort();
-      // const sortedCategories = [...categoriesSet].sort();
+  
 
-     
+    // Parcourt les données pour collecter les auteurs uniques et les catégories uniques
+    data.forEach((book) => {
+      book.authors.forEach((author) => {
+        authorsSet.add(author);
+      });
 
-      // Parcourt les données pour collecter les auteurs uniques et les catégories uniques
-      data.forEach((book) => {
-        book.authors.forEach((author) => {
-          authorsSet.add(author);
+      if (book.categories) {
+        book.categories.forEach((category) => {
+          categoriesSet.add(category);
         });
+      }
+    });
 
-        if (book.categories) {
-          book.categories.forEach((category) => {
-            categoriesSet.add(category);
+    // Trie les auteurs et les catégories dans l'ordre alphabétique
+    const sortedAuthors = [...authorsSet].sort();
+    const sortedCategories = [...categoriesSet].sort();
+
+    // Ajoute les options des auteurs triés à l'élément de liste déroulante
+    sortedAuthors.forEach((author) => {
+      const option = document.createElement('option');
+      option.value = author;
+      option.textContent = author;
+      selectElement.appendChild(option);
+    });
+
+    // Ajoute les options des catégories triées à l'élément de liste déroulante
+    sortedCategories.forEach((category) => {
+      const option = document.createElement('option');
+      option.value = category;
+      option.textContent = category;
+      selectCategories.appendChild(option);
+    });
+
+    // Écoute l'événement de changement de l'élément de liste déroulante des auteurs
+selectElement.addEventListener('change', function () {
+  const selectedAuthor = selectElement.value;
+  const selectedCategory = selectCategories.value;
+  
+  // Réactive l'autre sélecteur si "Tous les auteurs" est sélectionné
+  if (selectedAuthor === 'Tous les auteurs') {
+    selectCategories.disabled = false;
+  } else {
+    selectCategories.disabled = true;
+  }
+  
+  applyFilters();
+});
+
+// Écoute l'événement de changement de l'élément de liste déroulante des catégories
+selectCategories.addEventListener('change', function () {
+  const selectedAuthor = selectElement.value;
+  const selectedCategory = selectCategories.value;
+
+  // Réactive l'autre sélecteur si "Toutes les catégories" est sélectionné
+  if (selectedCategory === 'Toutes les catégories') {
+    selectElement.disabled = false;
+  } else {
+    selectElement.disabled = true;
+  }
+
+  applyFilters();
+});
 
 
-
-          });
-        }
-      });
-     
-
-      // Ajoute les options des auteurs et des catégories aux éléments de liste déroulante
-      authorsSet.forEach((author) => {
-        const option = document.createElement('option');
-        option.value = author;
-        option.textContent = author;
-        selectElement.appendChild(option);
-      });
-
-      categoriesSet.forEach((category) => {
-        const option = document.createElement('option');
-        option.value = category;
-        option.textContent = category;
-        selectCategories.appendChild(option);
-      });
-
-      // Écoute les événements de changement sur les éléments de liste déroulante et appelle la fonction pour afficher les livres
-      selectElement.addEventListener('change', function () {
-        const selectedAuthor = selectElement.value;
-        const selectedCategory = selectCategories.value;
-        AfficherLivres(selectedAuthor, selectedCategory, data);
-      });
-
-      selectCategories.addEventListener('change', function () {
-        const selectedAuthor = selectElement.value;
-        const selectedCategory = selectCategories.value;
-        AfficherLivres(selectedAuthor, selectedCategory, data);
-      });
 
       // Affiche tous les livres par défaut
       AfficherLivres(null, null, data);
