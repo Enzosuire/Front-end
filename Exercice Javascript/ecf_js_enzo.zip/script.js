@@ -88,6 +88,7 @@ function AfficherLivres(selectedAuthor, selectedCategory, data) {
   });
 }
 
+
 // Fonction pour initialiser les listes déroulantes des auteurs et des catégories
 function NomAutCat() {
   
@@ -114,7 +115,6 @@ function applyFilters() {
       const categoriesSet = new Set();
 
   
-
     // Parcourt les données pour collecter les auteurs uniques et les catégories uniques
     data.forEach((book) => {
       book.authors.forEach((author) => {
@@ -151,8 +151,7 @@ function applyFilters() {
     // Écoute l'événement de changement de l'élément de liste déroulante des auteurs
 selectElement.addEventListener('change', function () {
   const selectedAuthor = selectElement.value;
-  const selectedCategory = selectCategories.value;
-  
+ 
   // Réactive l'autre sélecteur si "Tous les auteurs" est sélectionné
   if (selectedAuthor === 'Tous les auteurs') {
     selectCategories.disabled = false;
@@ -165,7 +164,7 @@ selectElement.addEventListener('change', function () {
 
 // Écoute l'événement de changement de l'élément de liste déroulante des catégories
 selectCategories.addEventListener('change', function () {
-  const selectedAuthor = selectElement.value;
+  
   const selectedCategory = selectCategories.value;
 
   // Réactive l'autre sélecteur si "Toutes les catégories" est sélectionné
@@ -177,7 +176,6 @@ selectCategories.addEventListener('change', function () {
 
   applyFilters();
 });
-
 
 
       // Affiche tous les livres par défaut
