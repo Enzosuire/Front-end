@@ -89,21 +89,17 @@ function AfficherLivres(selectedAuthor, selectedCategory, data) {
 }
 
 
+
 // Fonction pour initialiser les listes déroulantes des auteurs et des catégories
 function NomAutCat() {
   
-  const fileURL = './books.json';
+  const fileURL = "./books.json";
 
   // Récupère les éléments de liste déroulante des auteurs et des catégories
   const selectElement = document.getElementById('auteurSelect');
   const selectCategories = document.getElementById('catégorieselect');
 
-// Fonction pour appliquer les filtres et afficher les livres
-function applyFilters() {
-  const selectedAuthor = selectElement.value;
-  const selectedCategory = selectCategories.value;
-  AfficherLivres(selectedAuthor, selectedCategory, data);
-}
+
 
   // Charge les données des livres depuis le fichier JSON
   fetch(fileURL)
@@ -128,32 +124,48 @@ function applyFilters() {
       }
     });
 
+      // Fonction pour appliquer les filtres et afficher les livres
+  function applyFilters() {
+    const selectedAuthor = selectElement.value;
+    const selectedCategory = selectCategories.value;
+    AfficherLivres(selectedAuthor, selectedCategory,data);
+  }
+
     // Trie les auteurs et les catégories dans l'ordre alphabétique
     const sortedAuthors = [...authorsSet].sort();
     const sortedCategories = [...categoriesSet].sort();
 
-    // Ajoute les options des auteurs triés à l'élément de liste déroulante
-    sortedAuthors.forEach((author) => {
-      const option = document.createElement('option');
-      option.value = author;
-      option.textContent = author;
-      selectElement.appendChild(option);
-    });
 
-    // Ajoute les options des catégories triées à l'élément de liste déroulante
-    sortedCategories.forEach((category) => {
-      const option = document.createElement('option');
-      option.value = category;
-      option.textContent = category;
-      selectCategories.appendChild(option);
-    });
+  // La méthode trim() permet de retirer les blancs en début et fin de chaîne. 
+// Ajoute les options des auteurs triés à l'élément de liste déroulante
+sortedAuthors.forEach((author) => {
+  // Vérifie si l'auteur n'est pas vide avant de l'ajouter
+  if (author.trim() !== '') {
+    const option = document.createElement('option');
+    option.value = author;
+    option.textContent = author;
+    selectElement.appendChild(option);
+  }
+});
 
-    // Écoute l'événement de changement de l'élément de liste déroulante des auteurs
+// Ajoute les options des catégories triées à l'élément de liste déroulante
+sortedCategories.forEach((category) => {
+  // Vérifie si la catégorie n'est pas vide avant de l'ajouter
+  if (category.trim() !== '') {
+    const option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
+    selectCategories.appendChild(option);
+  }
+});
+
+
+// Écoute l'événement de changement de l'élément de liste déroulante des auteurs
 selectElement.addEventListener('change', function () {
-  const selectedAuthor = selectElement.value;
+  const selectedAuthor = selectElement.options[selectElement.selectedIndex].value;
  
-  // Réactive l'autre sélecteur si "Tous les auteurs" est sélectionné
-  if (selectedAuthor === 'Tous les auteurs') {
+  // Réactive l'autre sélecteur si la première option est sélectionnée
+  if (selectedAuthor === selectElement.options[0].value) {
     selectCategories.disabled = false;
   } else {
     selectCategories.disabled = true;
@@ -164,11 +176,10 @@ selectElement.addEventListener('change', function () {
 
 // Écoute l'événement de changement de l'élément de liste déroulante des catégories
 selectCategories.addEventListener('change', function () {
-  
-  const selectedCategory = selectCategories.value;
+  const selectedCategory = selectCategories.options[selectCategories.selectedIndex].value;
 
-  // Réactive l'autre sélecteur si "Toutes les catégories" est sélectionné
-  if (selectedCategory === 'Toutes les catégories') {
+  // Réactive l'autre sélecteur si la première option est sélectionnée
+  if (selectedCategory === selectCategories.options[0].value) {
     selectElement.disabled = false;
   } else {
     selectElement.disabled = true;
